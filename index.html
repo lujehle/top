@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sardinienreisereise</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 
 <body>
@@ -19,29 +21,47 @@
     </header>
 
     <main>
-        <h1>Lieblingsorte der Webmapper:innen</h1>
-        <h2>Sardinien</h2>
-        <p><strong>Sardinien</strong> (sardisch <em>Sardigna</em>, italienisch <em>Sardegna</em>, katalanisch <em>Sardenya</em>) ist – nach Sizilien – die zweitgrößte Insel im Mittelmeer. Die Insel gehört zu Italien und bildet mit den kleinen vorgelagerten Inseln die Autonome Region Sardinien. Die Region hat eine Fläche von 24.090 km² und zählt 1.587.413 Einwohner (Stand 31. Dezember 2022).
-        <p>Die Phönizier nannten die Insel auf der Stele von Nora Šrdn. Ein Fremdvolk, das ebenfalls als Šrdn (meist zu Scherden oder Schardana transkribiert) bezeichnet wurde, begegnet in ägyptischen Texten des 14. bis 12. Jahrhunderts v. Chr., jedoch ist strittig, ob dieses aus Sardinien stammte. Die Euboier nannten die Insel „Ichnoussa“ und die Griechen „Sandalyon“, da ihre Form an einen Fußabdruck erinnert. Als Namensgeber wird auch der Gott Sardus Pater genannt.</p>
-        <p>Viele Sarden sprechen noch etwas <em><strong>Sardisch</strong></em>, eine Sprache, die zur Familie der romanischen Sprachen gehört. Im öffentlichen Leben herrscht jedoch heute eindeutig das Italienische vor; aufgrund der kulturellen und linguistischen Italianisierung Sardiniens seit dem späten 18. Jahrhundert gilt die sardische Sprache als hochgradig gefährdet.</p>
-        Quelle: <a href="https://de.wikipedia.org/wiki/Sardinien">Wikipedia</a>
-        <figure>
-            <img src="images/attraction.jpg" alt="Leuchtturm am Starnd">
-            <!-- Bild von https://pixabay.com/de/photos/strand-k%C3%BCste-meer-h%C3%BCgel-berg-583172/-->
-            <figcaption>Blick auf die Bucht von Nelson Quelle: <a href="https://pixabay.com/de/photos/klippen-leuchtturm-berge-5638565/">Pixabay</a></figcaption>
-        </figure>
-        <h3>Übersichtskarte</h3>
-        <div id="map" style="width: 900px;height:600px;border:1px solid silver"></div>
+        <article>
+            <h1>Lieblingsorte der Webmapper:innen</h1>
+            <h2>Sardinien</h2>
+            <p><strong>Sardinien</strong> (sardisch <em>Sardigna</em>, italienisch <em>Sardegna</em>, katalanisch
+                <em>Sardenya</em>) ist – nach Sizilien – die zweitgrößte Insel im Mittelmeer. Die Insel gehört zu
+                Italien und bildet mit den kleinen vorgelagerten Inseln die Autonome Region Sardinien. Die Region hat
+                eine Fläche von 24.090 km² und zählt 1.587.413 Einwohner (Stand 31. Dezember 2022).
+            <p>Die Phönizier nannten die Insel auf der Stele von Nora Šrdn. Ein Fremdvolk, das ebenfalls als Šrdn (meist
+                zu Scherden oder Schardana transkribiert) bezeichnet wurde, begegnet in ägyptischen Texten des 14. bis
+                12. Jahrhunderts v. Chr., jedoch ist strittig, ob dieses aus Sardinien stammte. Die Euboier nannten die
+                Insel „Ichnoussa“ und die Griechen „Sandalyon“, da ihre Form an einen Fußabdruck erinnert. Als
+                Namensgeber wird auch der Gott Sardus Pater genannt.</p>
+            <p>Viele Sarden sprechen noch etwas <em><strong>Sardisch</strong></em>, eine Sprache, die zur Familie der
+                romanischen Sprachen gehört. Im öffentlichen Leben herrscht jedoch heute eindeutig das Italienische vor;
+                aufgrund der kulturellen und linguistischen Italianisierung Sardiniens seit dem späten 18. Jahrhundert
+                gilt die sardische Sprache als hochgradig gefährdet.</p>
+            Quelle: <a href="https://de.wikipedia.org/wiki/Sardinien">Wikipedia</a>
+            <figure>
+                <img src="images/attraction.jpg" alt="Leuchtturm am Starnd">
+                <!-- Bild von https://pixabay.com/de/photos/strand-k%C3%BCste-meer-h%C3%BCgel-berg-583172/-->
+                <figcaption>Blick auf die Bucht von Nelson Quelle: <a
+                        href="https://pixabay.com/de/photos/klippen-leuchtturm-berge-5638565/">Pixabay</a></figcaption>
+            </figure>
+            <h3>Übersichtskarte</h3>
+            <div id="map" style="width: 900px;height:600px;border:1px solid silver"></div>
 
 
-        <h3>Links</h3>
+            <h3>Links</h3>
 
-        <ul>
+            <ul>
+                <li><a
+                        href="https://www.getyourguide.de/-l249/?cmp=brand&ad_id=78271617416476&adgroup_id=1252344221310985&bid_match_type=be&campaign_id=377179584&device=c&feed_item_id=&keyword=get%20your%20guide%20sardinien&loc_interest_ms=133555&loc_physical_ms=146440&match_type=e&msclkid=9816c7d9bdd5164b260ea00ab0968c70&network=o&partner_id=CD951&target_id=kwd-78271751823954:loc-10&utm_adgroup=lc%3D249%3Asardinia%7Cct%3Dbrand%7Cfn%3Df3&utm_campaign=dc%3D29%3Ait%7Cnc%3D29%3Aitaly%7Cct%3Dbrand%7Cln%3D39%3Ade%7Ctc%3Dall&utm_keyword=get%20your%20guide%20sardinien&utm_medium=paid_search_brand&utm_query=get%20your%20guide%20sardinien&utm_source=bing&utm_term=get%20your%20guide%20sardinien&utm_content=lc%3D249%3Asardinia%7Cct%3Dbrand%7Cfn%3Df3">Getyourguide</a>
+                </li>
+                <li><a
+                        href="https://www.booking.com/region/it/sardegna.de.html?aid=1856196&pagename=sardegna&label=msn-WnO3k8UMCLqLulrnmY*aMQ-80882982815277:tikwd-80883136138733:loc-10:neo:mte:lp146440:dec:qsbooking%20com%20sardinien&utm_campaign=Region%20-%20Italy&utm_medium=cpc&utm_source=bing&utm_term=WnO3k8UMCLqLulrnmY*aMQ&msclkid=caa7b4e37eec1451713fd330738c0cb8&utm_content=R%3A908-sardegna">Hotels</a>
+                </li>
+                <li><a href="https://www.tripadvisor.de/Attraction_Products-g187879-Sardinia.html">Tripadvisor</a></li>
+            </ul>
+        </article>
     </main>
-    <li><a href="https://www.getyourguide.de/-l249/?cmp=brand&ad_id=78271617416476&adgroup_id=1252344221310985&bid_match_type=be&campaign_id=377179584&device=c&feed_item_id=&keyword=get%20your%20guide%20sardinien&loc_interest_ms=133555&loc_physical_ms=146440&match_type=e&msclkid=9816c7d9bdd5164b260ea00ab0968c70&network=o&partner_id=CD951&target_id=kwd-78271751823954:loc-10&utm_adgroup=lc%3D249%3Asardinia%7Cct%3Dbrand%7Cfn%3Df3&utm_campaign=dc%3D29%3Ait%7Cnc%3D29%3Aitaly%7Cct%3Dbrand%7Cln%3D39%3Ade%7Ctc%3Dall&utm_keyword=get%20your%20guide%20sardinien&utm_medium=paid_search_brand&utm_query=get%20your%20guide%20sardinien&utm_source=bing&utm_term=get%20your%20guide%20sardinien&utm_content=lc%3D249%3Asardinia%7Cct%3Dbrand%7Cfn%3Df3">Getyourguide</a></li>
-    <li><a href="https://www.booking.com/region/it/sardegna.de.html?aid=1856196&pagename=sardegna&label=msn-WnO3k8UMCLqLulrnmY*aMQ-80882982815277:tikwd-80883136138733:loc-10:neo:mte:lp146440:dec:qsbooking%20com%20sardinien&utm_campaign=Region%20-%20Italy&utm_medium=cpc&utm_source=bing&utm_term=WnO3k8UMCLqLulrnmY*aMQ&msclkid=caa7b4e37eec1451713fd330738c0cb8&utm_content=R%3A908-sardegna">Hotels</a></li>
-    <li><a href="https://www.tripadvisor.de/Attraction_Products-g187879-Sardinia.html">Tripadvisor</a></li>
-    </ul>
+
     <footer>
         <nav>
             <a href="https://pauly0602.github.io/top/">vorhergehende Etappe</a>
