@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neuseelandreise</title>
+    <title>Sardinienreise</title>
     <link rel="shortcut icon" href="images/user.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -44,14 +44,13 @@
             <figure>
                 <img src="images/attraction.jpg" alt="Leuchtturm am Starnd">
                 <!-- Bild von https://pixabay.com/de/photos/strand-k%C3%BCste-meer-h%C3%BCgel-berg-583172/-->
-                <figcaption>Blick auf die Bucht von Nelson Quelle: <a
+                <figcaption><i class="fa-solid fa-camera-retro"></i> Blick auf Leuchtturm über dem Meer Quelle: <a
                         href="https://pixabay.com/de/photos/klippen-leuchtturm-berge-5638565/">Pixabay</a></figcaption>
             </figure>
+            <h3><i class="fa-solid fa-map"></i> Übersichtskarte</h3>
             <h3>Übersichtskarte</h3>
-            <div id="map" style="width: 900px;height:600px;border:1px solid silver"></div>
-
-
-            <h3>Links</h3>
+            <div id="map"></div> 
+            <h3> <i class="fa-solid fa-link"></i> Links</h3>
 
             <ul>
                 <li><a
@@ -73,15 +72,7 @@
         </nav>
     </footer>
 
-    <script>
-        var map = L.map('map').setView([40.027778, 9.069444], 8);
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        }).addTo(map);
-        var marker = L.marker([40.027778, 9.069444]).addTo(map);
-        marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
-    </script>
+
 </body>
 
 </html>
