@@ -55,6 +55,11 @@ article figure>img {
     border: 1px solid silver;
     margin: auto;
 }
+#pulldown {
+    margin-left: 5%;
+    margin-top: 1em;
+}
+
 
 footer {
     text-align: center;
