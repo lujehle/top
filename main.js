@@ -250,3 +250,7 @@ document.querySelector("#pulldown select").onchange = function(evt) {
    window.location = url;
 }
 
+//Maßstab
+L.control.scale({
+    imperial: false
+}).addTo(map);
