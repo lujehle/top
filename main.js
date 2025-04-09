@@ -208,12 +208,16 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
+let markerGroup = L.layerGroup();
+
 // loop über Etappen
 for (let i = 0; i < STOPS.length; i++) {
     
     //console.log(STOPS[i], STOPS[i].title);
     //Marker zeichnen
     let marker = L.marker([STOPS[i].lat, STOPS[i].lng]).addTo(map);
+    marker.addTo(markerGroup);
+
     //Popup definieren 
     marker.bindPopup(`
         <h2>${STOPS[i].title}</h2>
@@ -242,7 +246,7 @@ for (let i = 0; i < STOPS.length; i++) {
    
 
 }
-
+markerGroup.addTo(map);
 // auf Änderungen beim Pulldown reagieren
 document.querySelector("#pulldown select").onchange = function(evt) {
    let url = `https://${evt.target.value}.github.io/top`;
@@ -262,6 +266,5 @@ L.control.layers({
     "Esri World Imagery": L.tileLayer.provider('Esri.WorldImagery').addTo(map),
 
 }, {
-
-
+    "Etappen": markerGroup
 }).addTo(map);
