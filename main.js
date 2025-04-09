@@ -254,3 +254,14 @@ document.querySelector("#pulldown select").onchange = function(evt) {
 L.control.scale({
     imperial: false
 }).addTo(map);
+
+//Layercontrol
+L.control.layers({
+    "OpenStreetMap Mapnik": L.tileLayer.provider('OpenStreetMap.Mapnik').addTo(map),
+    "Open Topo Map": L.tileLayer.provider('OpenTopoMap').addTo(map),
+    "Esri World Imagery": L.tileLayer.provider('Esri.WorldImagery').addTo(map),
+
+}, {
+
+
+}).addTo(map);
